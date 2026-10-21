@@ -106,6 +106,11 @@ a:hover{color:var(--witch)}
 .code-text{flex:1;min-width:0;padding:12px 14px;font-family:var(--mono);font-size:11px;color:#f5ede8;word-break:break-all;line-height:1.5;display:flex;align-items:center;min-height:44px}
 .copy-btn{border:none;border-left:1px solid var(--line2);cursor:pointer;background:var(--panel);color:var(--text);font-family:var(--body);font-weight:700;font-size:13px;padding:0 18px;display:flex;align-items:center;justify-content:center;gap:7px;transition:background .18s,color .18s;flex-shrink:0;min-width:82px;min-height:44px}
 .copy-btn:hover,.copy-btn.ok{background:var(--grad);color:#0a0608}
+.or-divider{display:flex;align-items:center;gap:12px;margin:16px 0 12px;font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--text3)}
+.or-divider::before,.or-divider::after{content:'';flex:1;height:1px;background:var(--line2)}
+.delta-hint{margin:0 0 10px;font-family:var(--mono);font-size:11px;color:var(--text3);line-height:1.6;text-align:center}
+.delta-hint b{color:var(--pumpkin-glow);font-weight:700}
+.guide-photo{width:100%;border-radius:11px;border:1px solid var(--line2);display:block;margin-top:8px;background:#120a10}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .step{border:1px solid var(--line);border-radius:16px;padding:24px;background:var(--bg2);position:relative;overflow:hidden;transition:border-color .2s,transform .2s}
 .step:hover{border-color:var(--line2);transform:translateY(-3px)}
@@ -266,6 +271,16 @@ a:hover{color:var(--witch)}
 <code class="code-text" id="mm2-code">loadstring(game:HttpGet('https://raw.githubusercontent.com/mm2scripthub/TravHub/refs/heads/main/MurderMystery2'))()</code>
 <button class="copy-btn" data-name="MM2 Script" data-code="loadstring(game:HttpGet('https://raw.githubusercontent.com/mm2scripthub/TravHub/refs/heads/main/MurderMystery2'))()">Copy</button>
 </div>
+
+<div class="or-divider">or</div>
+
+<p class="delta-hint">Don't know how to execute a loadstring? Just type <b>Ozen Hub</b> in your executor's search bar and run the first script that shows up — or follow the steps in the photo below.</p>
+
+<img class="guide-photo"
+     src="https://raw.githubusercontent.com/xysfhub/xysfhub.github.io/main/delta.png"
+     alt="How to execute the MM2 script in Delta Executor"
+     loading="lazy"
+     onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<p class=&quot;delta-hint&quot; style=&quot;color:var(--pumpkin)&quot;>⚠ Image not found — rename your file to delta.png and use the raw link.</p>')">
 </div>
 </div>
 </div>
