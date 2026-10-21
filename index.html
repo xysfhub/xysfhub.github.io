@@ -101,8 +101,8 @@ a:hover{color:var(--witch)}
 .tile:hover{transform:translateY(-4px);background:linear-gradient(var(--ang,120deg),var(--pumpkin),var(--witch),var(--toxic),var(--pumpkin));animation:spin 4s linear infinite}
 .tile-in{border-radius:19px;background:var(--bg2);overflow:hidden;height:100%;display:flex;flex-direction:column}
 .tile-media{position:relative;aspect-ratio:16/9;background:#0a0608;overflow:hidden;display:grid;place-items:center;background:radial-gradient(120% 120% at 28% 18%,rgba(255,107,26,.3),transparent 60%),radial-gradient(120% 120% at 82% 92%,rgba(168,85,247,.25),transparent 60%),#0a0608}
-.tile-icon{width:88px;height:88px;border-radius:20px;object-fit:cover;border:1px solid var(--line2);box-shadow:0 14px 30px rgba(0,0,0,.6);background:#1a0f16}
-.tile-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.2) 0%,transparent 35%,transparent 55%,rgba(0,0,0,.82) 100%);pointer-events:none}
+.tile-icon{width:96px;height:96px;border-radius:20px;object-fit:cover;border:1px solid var(--line2);box-shadow:0 14px 30px rgba(0,0,0,.6);background:#1a0f16;position:relative;z-index:2}
+.tile-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.2) 0%,transparent 35%,transparent 55%,rgba(0,0,0,.82) 100%);pointer-events:none;z-index:1}
 .tile-badges{position:absolute;left:14px;top:13px;z-index:3;display:flex;gap:7px;flex-wrap:wrap}
 .badge{font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:5px 9px;border-radius:7px;border:1px solid var(--line2);color:var(--text);background:rgba(10,6,8,.8);backdrop-filter:blur(6px);display:inline-flex;align-items:center;gap:6px}
 .badge-on{color:var(--toxic);border-color:rgba(34,197,94,.4)}
@@ -115,7 +115,7 @@ a:hover{color:var(--witch)}
 .copybox{margin-top:auto}
 .code-row{display:flex;flex-direction:row;border:1px solid var(--line2);border-radius:11px;overflow:hidden;background:#0a0608}
 .code-text{flex:1;min-width:0;padding:12px 14px;font-family:var(--mono);font-size:11px;color:var(--text2);word-break:break-all;line-height:1.5;display:flex;align-items:center}
-.copy-btn{border:none;border-left:1px solid var(--line2);cursor:pointer;background:var(--panel);color:var(--text);font-family:var(--body);font-weight:700;font-size:13px;padding:0 18px;display:flex;align-items:center;justify-content:center;gap:7px;transition:background .18s,color .18s;flex-shrink:0;min-width:78px}
+.copy-btn{border:none;border-left:1px solid var(--line2);cursor:pointer;background:var(--panel);color:var(--text);font-family:var(--body);font-weight:700;font-size:13px;padding:0 18px;display:flex;align-items:center;justify-content:center;gap:7px;transition:background .18s,color .18s;flex-shrink:0;min-width:82px}
 .copy-btn:hover,.copy-btn.ok{background:var(--grad);color:#0a0608}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .step{border:1px solid var(--line);border-radius:16px;padding:24px;background:var(--bg2);position:relative;overflow:hidden;transition:border-color .2s,transform .2s}
@@ -262,8 +262,7 @@ a:hover{color:var(--witch)}
 <div class="tile reveal" id="mm2">
 <div class="tile-in">
 <div class="tile-media">
-<!-- Halloween 2026 style MM2 icon placeholder. Replace src with the official new Halloween MM2 logo when available. -->
-<div class="tile-icon" style="display:grid;place-items:center;font-size:44px;background:radial-gradient(circle at 30% 30%,#ff6b1a,#a855f7 70%,#120a10);color:#0a0608;text-shadow:0 2px 8px rgba(0,0,0,.4)">🎃</div>
+<img class="tile-icon" src="https://tr.rbxcdn.com/180DAY-ab1484ff8063476d413da09dd25df93f/256/256/Image/Webp/noFilter" alt="Murder Mystery 2 — Halloween">
 <div class="tile-badges"><span class="badge badge-on">● Working</span><span class="badge">Keyless</span></div>
 <div class="tile-name">MM2 Script</div>
 </div>
@@ -326,4 +325,5 @@ a:hover{color:var(--witch)}
 <h2 class="display">Good to know</h2>
 </div>
 <div class="faq-list">
-<div class="faq-item open"><button class="faq-q">Is the script really keyless? <span class="ico">+</span></button><div class="faq-a"><div class="faq-a-inner
+<div class="faq-item open"><button class="faq-q">Is the script really keyless? <span class="ico">+</span></button><div class="faq-a"><div class="faq-a-inner">Yep. No Linkvertise, no checkpoints, no waiting around. Just copy it and run it.</div></div></div>
+<div class="faq-item"><button class="faq-q">Is it free? <span class="ico">+</span></button><div class="faq-a"><div class="faq-a-inner">Totally free. If it ever helps you out,
